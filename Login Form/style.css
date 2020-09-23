@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+    background-color: #0e1023;
+    color: #fff;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container {
+    height: 75vh;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    position: relative;
+    top: 20vh;
+}
+
+.about {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #596be0;
+    font-size: 3rem;
+}
+
+p {
+    width: 35%;
+    font-size: 1.1rem;
+}
+
+.laptop{
+    height: 42vh;
+    width: 34vw;
+    position: absolute;
+    left: 56%;
+    bottom: 31%;
+    background-color: #fff;
+    z-index: -1;
+    background-color: lightgrey;
+}
+
+/* Form */
+form {
+    height: 30vh;
+    width: 20vw;
+    position: absolute;
+    bottom: 40vh;
+    left: 63vw;
+    display: flex;
+    flex-direction: column;
+    color: #54c2dc;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px #54c2dc;
+    background-color: aliceblue;
+    font-weight: 700;
+    z-index: 5;
+}
+
+form label {
+    margin: auto;
+    font-size: large;
+}
+
+input {
+    width: 80%;
+    margin: auto;
+    height: 3vh;
+    padding: 3px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-radius: 3px;
+    border-bottom: 3px solid #54c2dc;
+    font-weight: 700;
+    font-size: large;
+    color: #54c2dc;
+}
+
+input:focus {
+    outline: none;
+    color: #54c2dc;
+}
+
+button {
+    width: 23%;
+    margin: auto;
+    font-size: 1.3rem;
+    padding: 0.5%;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    color: #fff;
+    background-color: #54c2dc;
+}
+
+button:active {
+    transform: scaleY(0.95);
+}
+
+/* Footer */
+footer {
+    height: 5vh;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    font-size: 1.2rem;
+    position: relative;
+    top: 20vh;
+}
+
+.f2 {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #54c2dc;
+}
+
+/* Classes for JS */
+.error {
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+.success {
+    color: green;
+    border-bottom: 3px solid green;
+}
